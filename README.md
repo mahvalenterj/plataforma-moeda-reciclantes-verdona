@@ -1,7 +1,7 @@
 # Verdona: MVP de demonstração
 
-Garrafa guardada paga a mistura. Backend em Java (Spring Boot) com ledger de dupla entrada e
-front em React com animações. Todos os dados são de exemplo e nenhum dinheiro de verdade se move.
+Backend em Java (Spring Boot) com ledger de dupla entrada e
+front em React com animações. Todos os dados são de exemplo.
 
 ## O que roda aqui
 
