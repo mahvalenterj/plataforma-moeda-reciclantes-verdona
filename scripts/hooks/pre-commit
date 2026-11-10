@@ -1,0 +1,11 @@
+#!/bin/sh
+# Bloqueia commit de arquivos privados do método.
+bloqueados=$(git diff --cached --name-only | grep -E '^(CLAUDE\.md|docs/(specs|adr|grill|juridico)/)' || true)
+if [ -n "$bloqueados" ]; then
+  echo "Commit bloqueado. Estes arquivos são privados e não sobem para o repositório:"
+  echo "$bloqueados"
+  echo "Tire do commit com: git restore --staged <arquivo>"
+  echo "(antes do primeiro commit do repositório, use: git rm --cached <arquivo>)"
+  exit 1
+fi
+exit 0

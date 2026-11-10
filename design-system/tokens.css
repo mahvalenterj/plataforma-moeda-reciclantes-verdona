@@ -1,0 +1,45 @@
+/* Gerado a partir de tokens.json. Não edite cores direto nos componentes. */
+:root {
+  --cor-superficie: #F5F3EA;
+  --cor-superficie-elevada: #FBFAF5;
+  --cor-superficie-forte: #0B2A1B;
+  --cor-superficie-destaque: #E3F0DF;
+  --cor-texto: #14281C;
+  --cor-texto-suave: #5B6B60;
+  --cor-texto-invertido: #FBFAF5;
+  --cor-acao: #2E7A3A;
+  --cor-acao-hover: #235F2D;
+  --cor-acento: #C07A3A;
+  --cor-acento-texto: #6B3A14;
+  --cor-acento-fundo: #F3DFC9;
+  --cor-borda: #DCDFD0;
+  --cor-sucesso: #2E7A3A;
+  --cor-sucesso-fundo: #E3F0DF;
+  --cor-erro: #B3402F;
+  --cor-erro-fundo: #F8E5E0;
+  --cor-foco: #2E7A3A;
+
+  --fonte-display: "Bricolage Grotesque Variable", system-ui, sans-serif;
+  --fonte-texto: "Figtree Variable", system-ui, sans-serif;
+
+  --raio-sm: 12px; --raio-md: 16px; --raio-lg: 24px; --raio-xl: 32px; --raio-pilula: 999px;
+  --toque-minimo: 48px;
+  --sombra-suave: 0 10px 30px -16px rgba(11,42,27,.28);
+  --sombra-elevada: 0 18px 40px -18px rgba(11,42,27,.35), 0 2px 6px rgba(11,42,27,.08);
+  --mov-rapido: 150ms; --mov-padrao: 250ms; --mov-lento: 450ms;
+}
+
+/* Tema de organização (white-label): muda só marca e acento, nunca erro e sucesso. */
+[data-org="exemplo"] {
+  --cor-acao: #1F6F8B;
+  --cor-acao-hover: #185870;
+}
+
+/* Tema escuro: reservado. Decidir no Grill 001 antes de preencher. */
+[data-tema="escuro"] {
+  /* --cor-superficie: ...; */
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root { --mov-rapido: 0ms; --mov-padrao: 0ms; --mov-lento: 0ms; }
+}

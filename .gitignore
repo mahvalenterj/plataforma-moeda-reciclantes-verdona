@@ -1,0 +1,13 @@
+node_modules/
+dist/
+target/
+*.log
+.DS_Store
+# Raciocínio e contexto local: não sobem para o GitHub
+CLAUDE.md
+docs/specs/
+docs/adr/
+docs/grill/
+docs/juridico/
+
+# Builds e dependências
